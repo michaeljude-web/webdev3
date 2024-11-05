@@ -1,0 +1,105 @@
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5dc;
+        }
+        .login-container {
+            width: 400px;
+            height: 225px;
+            border: 2px solid #000;
+            border-radius: 10px;
+            background-color: #fff0e1;
+            position: relative;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .login-header {
+            background-color: #f4c2c2;
+            height: 40px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+        }
+        .login-header .buttons {
+            margin-left: auto;
+            display: flex;
+            gap: 5px;
+        }
+        .login-header .button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .button.green {
+            background-color: #00ff00;
+        }
+        .button.yellow {
+            background-color: #ffff00;
+        }
+        .button.red {
+            background-color: #ff4500;
+        }
+        .login-content {
+            padding: 20px;
+            text-align: center;
+        }
+        .login-content h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .input-field {
+            width: 80%;
+            height: 30px;
+            margin: 10px 0;
+            border: 2px solid #f4c2c2;
+            border-radius: 10px;
+            padding: 0 10px;
+            font-size: 18px;
+        }
+        input::placeholder{
+            color: tomato;
+        }
+        .login-button {
+            width: 40px;
+            height: 40px;
+            background-color: #f4c2c2;
+            border: none;
+            border-radius: 50%;
+            position: absolute;
+            right: 65px;
+            top: 90%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+        .login-button:before {
+            content: '→';
+            font-size: 24px;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <div class="buttons">
+                <div class="button green"></div>
+                <div class="button yellow"></div>
+                <div class="button red"></div>
+            </div>
+        </div>
+        <div class="login-content">
+            <h1>Login</h1>
+            <input type="text" class="input-field" placeholder="Username">
+            <input type="password" class="input-field" placeholder="Password">
+            <button class="login-button"></button>
+        </div>
+    </div>
+</body>
+</html>
